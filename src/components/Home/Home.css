@@ -1,0 +1,53 @@
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  height: 50rem;
+}
+
+.Picture {
+  display: flex;
+
+  position: relative;
+  left: 230px;
+}
+
+.Description {
+  width: 22rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+
+  position: relative;
+  left: 225px;
+  top: 400px;
+}
+
+.Description > h1 {
+  width: 20rem;
+  font-size: 48px;
+}
+
+.Description > p {
+  width: 15rem;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.Background_1 {
+  width: 50rem;
+  height: 10rem;
+  background-color: #faf4ef;
+
+  position: relative;
+  left: -100px;
+  top: 50px;
+  z-index: -1;
+}

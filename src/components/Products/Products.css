@@ -1,0 +1,48 @@
+.Products {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  height: 55rem;
+}
+
+.Label {
+  margin-top: 1rem;
+}
+
+.Label > h1 {
+  font-size: 48px;
+}
+
+.Types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Types > h2 {
+  font-size: 18px;
+  margin: 1rem;
+}
+
+.Types > h2:hover {
+  cursor: pointer;
+}
+
+.Black {
+  color: black;
+}
+
+.Gray {
+  color: rgba(75, 75, 75, 50%);
+}
+
+.ProductPictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.ProductPictures > img {
+  width: 17rem;
+  margin: 1rem;
+}

@@ -1,0 +1,49 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Name > h1 {
+  font-size: 32px;
+}
+
+.Name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 33%;
+  width: 5rem;
+}
+
+.Tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.Tags > h1 {
+  font-size: 24px;
+  margin: 1rem;
+}
+
+.Tags > h1:hover {
+  cursor: pointer;
+}
+
+.Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 33%;
+  width: 5rem;
+}
+
+.Icons > img {
+  margin: 0.5rem;
+}
+
+.Icons > img:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.Quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.QuoteContents {
+  height: 15rem;
+  width: 80rem;
+  background-color: #faf4ef;
+  border-radius: 0px 100px 0px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-left: 16rem;
+}
+
+.QuoteContents > h1 {
+  font-size: 48px;
+  margin-left: -35rem;
+  margin-bottom: 2rem;
+}
+
+.QuoteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10rem;
+  height: 3rem;
+  position: relative;
+  top: 3rem;
+  left: -69rem;
+  margin: 1rem;
+}
+
+.QuoteMe {
+  color: white;
+  background-color: #4b4b4b;
+  font-size: 18px;
+}
+
+.ContactSales {
+  color: #4b4b4b;
+  background-color: white;
+  font-size: 18px;
+}

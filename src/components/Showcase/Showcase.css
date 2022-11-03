@@ -1,0 +1,48 @@
+.Showcase {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55rem;
+}
+
+.ShowcaseContents {
+  display: flex;
+}
+
+.Textbox {
+  width: 25rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+.Textbox > h1 {
+  font-size: 48px;
+}
+
+.Textbox > p {
+  font-size: 18px;
+  color: #737373;
+  width: 16rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  line-height: 25px;
+}
+
+.Buttons {
+  display: flex;
+}
+
+.Arrow {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf4ef;
+  margin-right: 1rem;
+}
+
+.Arrow > img {
+  width: 1.75rem;
+}
