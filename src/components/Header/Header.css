@@ -47,3 +47,93 @@
 .Icons > img:hover {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .Header {
+    align-items: flex-start;
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: -20rem;
+  }
+
+  .Name {
+    margin-right: 30%;
+  }
+
+  .Burger {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+
+  .TopLine {
+    border: 1px solid black;
+    width: 0.75rem;
+  }
+
+  .MidLine {
+    border: 1px solid black;
+    width: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .BotLine {
+    border: 1px solid black;
+    width: 0.75rem;
+    position: relative;
+    left: 0.75rem;
+  }
+
+  .Menu {
+    height: 15rem;
+    width: 10rem;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(250, 244, 239, 0.78);
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+  }
+
+  .Menu > h1 {
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .On {
+    animation: slidein 0.3s linear;
+    left: 16rem;
+  }
+
+  .Off {
+    animation: slideout 0.3s linear;
+    left: 30rem;
+  }
+
+  @keyframes slidein {
+    from {
+      left: 30rem;
+    }
+    to {
+      left: 16rem;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      left: 16rem;
+    }
+    to {
+      left: 30rem;
+    }
+  }
+}

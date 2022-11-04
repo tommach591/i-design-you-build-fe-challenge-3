@@ -9,6 +9,7 @@ import Table from "../../utils/table.svg";
 
 function Products({ isMobile }) {
   const [type, setType] = useState("All");
+  const [dropdownOn, setDropdownOn] = useState(false);
 
   function getProducts() {
     const list = [];
@@ -40,7 +41,74 @@ function Products({ isMobile }) {
   }
 
   function getMobile() {
-    return <div className="Products">Mobile</div>;
+    return (
+      <div className="Products">
+        <div className="Label">
+          <h1>Products</h1>
+          <div className="DropdownType">
+            <h2>
+              {type}
+              <div
+                className={
+                  dropdownOn ? "DropdownArrow Up" : "DropdownArrow Down"
+                }
+                onClick={() => {
+                  setDropdownOn(!dropdownOn);
+                }}
+              />
+            </h2>
+
+            {dropdownOn ? (
+              <div className="Dropdown">
+                <h2
+                  onClick={() => {
+                    setType("All");
+                    setDropdownOn(false);
+                  }}
+                >
+                  All
+                </h2>
+                <h2
+                  onClick={() => {
+                    setType("Lamp");
+                    setDropdownOn(false);
+                  }}
+                >
+                  Lamp
+                </h2>
+                <h2
+                  onClick={() => {
+                    setType("Chair");
+                    setDropdownOn(false);
+                  }}
+                >
+                  Chair
+                </h2>
+                <h2
+                  onClick={() => {
+                    setType("Table");
+                    setDropdownOn(false);
+                  }}
+                >
+                  Table
+                </h2>
+                <h2
+                  onClick={() => {
+                    setType("Sofa");
+                    setDropdownOn(false);
+                  }}
+                >
+                  Sofa
+                </h2>
+              </div>
+            ) : (
+              <div />
+            )}
+          </div>
+        </div>
+        <div className="ProductPictures">{getProducts()}</div>
+      </div>
+    );
   }
 
   function getWeb() {

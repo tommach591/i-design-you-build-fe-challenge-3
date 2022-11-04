@@ -43,6 +43,81 @@
 }
 
 .ProductPictures > img {
-  width: 17rem;
+  height: 25rem;
   margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Products {
+    height: 33rem;
+    width: 100vw;
+    margin: 0rem;
+  }
+
+  .Label {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    width: 22rem;
+  }
+
+  .Label > h1 {
+    font-size: 32px;
+  }
+
+  .DropdownType {
+    width: 4.5rem;
+    margin-left: 45%;
+  }
+
+  .DropdownType > h2 {
+    font-size: 20px;
+  }
+
+  .ProductPictures {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .DropdownArrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+  }
+
+  .Down {
+    transform: rotate(45deg);
+    margin-bottom: 3px;
+  }
+
+  .Up {
+    transform: rotate(-135deg);
+  }
+
+  .Dropdown {
+    position: absolute;
+    left: 12.5rem;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 10rem;
+    height: 11rem;
+    background-color: rgba(240, 240, 240, 0.78);
+    backdrop-filter: blur(10px);
+  }
+
+  .Dropdown > h2 {
+    font-size: 20px;
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+  }
 }

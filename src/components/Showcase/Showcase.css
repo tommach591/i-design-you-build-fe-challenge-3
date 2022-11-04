@@ -46,3 +46,42 @@
 .Arrow > img {
   width: 1.75rem;
 }
+
+@media (max-width: 768px) {
+  .Showcase {
+    margin: 0rem;
+    margin-top: 1rem;
+    height: 50rem;
+  }
+
+  .ShowcaseContents {
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .ShowcaseContents > img {
+    height: 30rem;
+    position: relative;
+    left: 50px;
+  }
+
+  .Textbox {
+    width: 25rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .Textbox > h1 {
+    font-size: 32px;
+  }
+
+  .Textbox > p {
+    font-size: 16px;
+    color: #737373;
+    width: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 25px;
+  }
+}

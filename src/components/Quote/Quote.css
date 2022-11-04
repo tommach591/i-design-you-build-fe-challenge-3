@@ -49,3 +49,38 @@
   background-color: white;
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .Quote {
+    margin: 2rem;
+  }
+
+  .QuoteContents {
+    height: 16rem;
+    padding-left: 2rem;
+    margin-left: 0rem;
+    align-items: flex-start;
+  }
+
+  .QuoteContents > h1 {
+    font-size: 36px;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  .QuoteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 10rem;
+    height: 3rem;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    margin: 0rem;
+    margin-top: 0.5rem;
+  }
+}

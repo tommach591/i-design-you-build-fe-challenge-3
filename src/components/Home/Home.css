@@ -51,3 +51,35 @@
   top: 50px;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .Home {
+    height: 30rem;
+  }
+
+  .Picture {
+    left: 415px;
+  }
+
+  .Description {
+    width: 14rem;
+    height: 12rem;
+    left: 150px;
+    top: 70px;
+  }
+
+  .Description > h1 {
+    width: 15rem;
+    font-size: 28px;
+  }
+
+  .Description > p {
+    width: 10rem;
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+
+  .Room_1 {
+    width: 30rem;
+  }
+}
